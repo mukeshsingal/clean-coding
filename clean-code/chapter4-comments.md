@@ -141,3 +141,44 @@ cases it’s simply a matter of creating a function that says the same thing as 
    If you are writing a public API, then you should certainly write good javadocs for it.
    But keep in mind the rest of the advice in this chapter. Javadocs can be just as misleading,
    nonlocal, and dishonest as any other kind of comment.
+   
+
+### Bad Comments
+1. Mumbling 
+
+    Plopping in a comment just because you feel you should or because the process requires it,
+    is a hack. If you decide to write a comment, then spend the time necessary to make sure it
+    is the best comment you can write.
+    
+2. Redundant Comments
+3. Misleading Comments
+   when code and comment tells different stories. 
+4. Javadocs in Nonpublic Code
+5. When Inobvious Connection between comment and code
+    ```
+    /*
+    * start with an array that is big enough to hold all the pixels
+    * (plus filter bytes), and an extra 200 bytes for header info
+    */
+    this.pngBytes = new byte[((this.width + 1) * this.height * 3) + 200];
+    ```
+    What is a filter byte? Does it relate to the +1? Or to the *3? Both? Is a pixel a byte? Why
+    200? The purpose of a comment is to explain code that does not explain itself. It is a pity
+    when a comment needs its own explanation.
+6. Too Much Information in comment 
+7. Nonlocal Information, not related to function. 
+8. Commented-Out Code: delete as soon as you see it. 
+9. Attributions and Bylines : Stop adding author names in comment
+10. Noise Comments : when comment being added to just to add comments. Doesn't give any meaning information at all.
+    ```
+    private String name;
+    /** The version. */
+    private String version;
+    /** The licenceName. */
+    private String licenceName;
+    /** The version. */
+    private String info;
+    ```
+
+
+   
