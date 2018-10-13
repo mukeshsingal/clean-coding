@@ -1,4 +1,4 @@
-#Functions
+# Functions
 
 * What is it that makes a function easy to read and understand? 
 * How can we make a function communicate its intent? 
