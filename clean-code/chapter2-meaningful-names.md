@@ -148,7 +148,7 @@ The code that has more to do with problem domain concepts should have names draw
   state, and zipcode. Taken together it’s pretty clear that they form an address. But what if
   you just saw the state variable being used alone in a method? Would you automatically
   infer that it was part of an address?
-  You can add context by using prefixes: addrFirstName, addrLastName, addrState, and so
+  You can add context by using prefixes: **addr**FirstName, **addr**LastName, **addr**State, and so
   on. At least readers will understand that these variables are part of a larger structure. Of
   course, a better solution is to create a class named Address. Then, even the compiler knows
   that the variables belong to a bigger concept.
