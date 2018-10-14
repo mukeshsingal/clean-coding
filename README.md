@@ -6,4 +6,4 @@ Content Table:
 1. [Meaningful Names](clean-code/chapter2-meaningful-names.md)
 2. [Functions](clean-code/chapter3-functions.md)
 3. [Comments](clean-code/chapter4-comments.md)
- 
+4. [Formatting](clean-code/chapter5-formatting.md) 
